@@ -93,7 +93,7 @@ export type PlantDTO = {
   category: string; 
 };
 
-export const fetchPlants = async (): Promise<AxiosResponse> => {
+export const fetchPlants = async (): Promise<AxiosResponse<PlantDTO>> => {
   return axios.get('https://fakestoreapi.com/products');
 }
 
